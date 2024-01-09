@@ -1,0 +1,18 @@
+//colores
+
+$primary_color:#0000ff;
+$secondary_color:#ffff00;
+$info_color:#ffffff;
+$danger_color:#ff0000;
+$background_color:#9b8f9b;
+body{
+    background-color: $background_color;    
+}
+h1{color:$primary_color;}
+//Mapa
+
+$size_btn:(
+    sm: 20px,
+    md: 40px,
+    lg: 60px,
+)
