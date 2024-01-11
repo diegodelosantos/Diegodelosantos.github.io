@@ -1,6 +1,0 @@
-@each $n, $c in $size_btn{
-    .btn-#{$n}{
-        width: $c;
-        height: $c;
-    }
-}

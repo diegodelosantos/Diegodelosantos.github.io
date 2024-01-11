@@ -1,18 +1,30 @@
-//colores
+// Paleta de colores
+$primary_color: rgb(239, 215, 215);
+$secundary_color : black;
+$terciary_color:grey;
+$info_color:blue;
+$danger_color:#b00020;
 
-$primary_color:#0000ff;
-$secondary_color:#ffff00;
-$info_color:#ffffff;
-$danger_color:#ff0000;
-$background_color:#9b8f9b;
-body{
-    background-color: $background_color;    
-}
-h1{color:$primary_color;}
-//Mapa
-
+// Mapa con tamaño de botones 
 $size_btn:(
-    sm: 20px,
-    md: 40px,
-    lg: 60px,
-)
+    sm: 40px,
+    md: 80px,
+    lg:100px
+);
+
+// Ejemplo de con acceder al valor de un mapa mediate su clave 
+$t: map-get($size_btn,sm);
+
+.fuente{
+    font-size: $t;
+}
+// Mapa con colores que usaremos para los botones
+
+$color:(
+    primary:$primary_color,
+    secundary:$secundary_color,
+    info:$info_color,
+    danger:$danger_color
+);
+
+$border: 40%;

@@ -1,0 +1,37 @@
+
+
+
+
+
+
+
+/* botones de distintos tamaño */
+@each $n, $t in $size_btn {
+
+    .btn-#{$n}{
+        width: $t;
+        height: $t;
+    }
+}
+/* Botones de distintos colores */
+@each $n, $c in $color {
+    .btn-#{$n}{
+        background-color: $c;
+        color: $terciary_color;
+    }
+}
+
+
+
+.btn{
+    @include btn( $border);
+
+    &:hover{
+        background-color: $secundary_color;
+        color: $primary_color;
+    }
+}
+.btn_border{
+    @include btn(7px);
+    @include shadow(5px, 5px, rgb(21, 20, 20))
+}
