@@ -1,5 +1,5 @@
 @mixin btn( $border){
-    display: flex;     
+     display: flex;     
      border-radius:  $border;     
      justify-content: center;
      align-items: center
@@ -7,7 +7,6 @@
  @mixin shadow($x, $y, $color){
     box-shadow: $x $y $color;
  }
-// Esto es una prueba del mixin
  .sombra{
-    @include shadow(2px, 2px, red);
+    @include shadow(2px, 2px, #fff700);
  }
