@@ -5,13 +5,25 @@
 @import "../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
-
+$body-color: #bd1e1e;
+$primary-color: purple;
+$secondary-color:orange;
+$danger:red;
+$terciary-color:grey;
+$body-bg: white;
+$border-radius: 10%;
+$boder-width: 1px;
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/variables-dark";
 
 // 4. Include any default map overrides here
-
+$theme-colors: (
+    "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
 // 5. Include remainder of required parts
 @import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -38,14 +50,9 @@
 img {
     max-width: 100%;
   }
-$body-color: #bd1e1e;
-$primary-color: purple;
-$seconary-color:orange;
-$danger:red;
-$terciary-color:grey;
-$body-bg: $terciary-color;
-$border-radius: 10%;
-$boder-width: 1px;
+
+
+
 
 
 
