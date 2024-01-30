@@ -103,6 +103,6 @@ export class DireccionComponent {
   ];
 
   onSubmit(): void {
-    alert('Thanks!');
+    alert('Muchas gracias!');
   }
 }
