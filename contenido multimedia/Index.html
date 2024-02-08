@@ -11,7 +11,7 @@
     <img src="../contenido multimedia/fotos/OIP.webp" alt="Ornitorrinco">
     <img src="../contenido multimedia/fotos/OIP (2).jpg" alt="Ornitorrinco"> -->
 
-    <picture>
+    <!-- <picture>
         <source
         media="(max-width: 767px)"
         sizes="(max-width: 355px) 100vw, 355px"
@@ -31,7 +31,14 @@
         srcset="OIP_hhxscp_c_scale,w_480.webp 480w,./contenidomultimedia/fotos/OIP_hhxscp_c_scale,w_474.webp 474w"
         src="./contenidomultimedia/fotos/uuqilllscb6utdcl3qey/OIP_hhxscp_c_scale,w_474.webp"
         alt="">
-    </picture>
-
+    </picture> -->
+    <video controls>
+        <!-- <source src="https://storage.googleapis.com/web-dev-assets/video-and-source-tags/chrome.webm" type="video/webm">
+        <source src="https://storage.googleapis.com/web-dev-assets/video-and-source-tags/chrome.mp4" type="video/mp4"> -->
+        <source src="./asset/chrome.webm" type="video/webm">
+        <track src="Subtitulo.vtt" label="English captions" kind="captions" srclang="en" default>
+        <track src="Subtitulo.vtt" label="中文字幕" kind="captions" srclang="zh">
+        <p>Your browser cannot play the provided video file.</p>
+      </video>
 </body>
 </html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" 
+          content="initial-scale=1.0, user-scalable=no"/>
+  
+    <meta charset="utf-8">
+    <title>Transforming video</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!--link rel="stylesheet" href="css/04cssTransform.css" type="text/css" -->
+
+</head>
+<body>
+        <header>
+        <button onclick="playVideo();" class="btn btn-success">
+            Play <i class="glyphicon glyphicon-play"></i>
+        </button>
+        <button onclick="pauseVideo();" class="btn btn-warning">
+            Pause <i class="glyphicon glyphicon-pause"></i>
+        </button>
+        <button onclick="zoomIn();"  class="btn btn-info">
+           <i class="glyphicon glyphicon-zoom-in"></i>
+        </button>
+        <button onclick="zoomOut();"  class="btn btn-info">
+           <i class="glyphicon glyphicon-zoom-out"></i>
+        </button>
+        <button onclick="rotateLeft();"  class="btn btn-info">
+           <i class="glyphicon glyphicon-repeat"></i>
+        </button>
+        <button onclick="rotateRight();"  class="btn btn-info">
+           <i class="glyphicon glyphicon-repeat"></i>
+        </button>
+       </header>
+
+    <video width="480" height="320" controls="controls" id="myVideo">
+      <source src="movie_clip2.mp4" type="video/mp4">         
+      <source src="movie_clip2.ogg" type="video/ogg">         
+        <p>Your browser does not support HTML5 video
+        </p>         
+    </video>
+    <script type='text/javascript'>
+theVideo = document.querySelector("#myVideo");
+var zoom = 0;
+
+function playVideo() {
+   theVideo.play();
+}
+
+function pauseVideo() {
+   theVideo.pause();
+}
+
+function zoomIn() {
+    zoom = zoom + 0.1;
+    theVideo.style.transform = 'scale('+zoom+')';
+}
+
+function zoomOut() {
+    zoom = zoom - 0.1;
+    //theVideo.style.transform = 'scale('+zoom+')';
+}
+
+function rotateLeft() {
+
+}
+
+function rotateRight() {
+
+}
+</script>
+</body>
+</html>
+
