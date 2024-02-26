@@ -1,0 +1,62 @@
+<form [formGroup]="addressForm" novalidate (ngSubmit)="onSubmit()">
+  <mat-card class="shipping-card">
+    <mat-card-header>
+      <mat-card-title>Formulario de registro</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Nombre" formControlName="nombre">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Primer Apellido" formControlName="primerapellido">
+            @if (addressForm.controls['firstName'].hasError('required')) {
+              <mat-error>First name is <strong>required</strong></mat-error>
+            }
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Segundo Apellido" formControlName="segundoapellido">
+            @if (addressForm.controls['lastName'].hasError('required')) {
+              <mat-error>Last name is <strong>required</strong></mat-error>
+            }
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <textarea matInput placeholder="Contraseña" formControlName="contrasenia"></textarea>
+            @if (addressForm.controls['address'].hasError('required')) {
+              <mat-error>Address is <strong>required</strong></mat-error>
+            }
+          </mat-form-field>
+        </div>
+      </div>
+      
+    
+      <div class="row">
+        <div class="col">
+          <mat-form-field>
+            <mat-label>Jugador favorito</mat-label>
+            <mat-select>
+              <mat-option value="one">Lebron</mat-option>
+              <mat-option value="two">Kobe</mat-option>
+              <mat-option value="two">Curry</mat-option>
+              <mat-option value="two">Jordan</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit">Enviar</button>
+    </mat-card-actions>
+  </mat-card>
+</form>

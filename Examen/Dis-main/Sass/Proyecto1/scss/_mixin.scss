@@ -1,0 +1,12 @@
+@mixin btn( $border){
+     display: flex;     
+     border-radius:  $border;     
+     justify-content: center;
+     align-items: center
+ }
+ @mixin shadow($x, $y, $color){
+    box-shadow: $x $y $color;
+ }
+ .sombra{
+    @include shadow(2px, 2px, #fff700);
+ }

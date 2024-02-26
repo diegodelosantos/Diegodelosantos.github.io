@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Productos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>Navegación</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    main{
+        margin: 0 150px;
+    }
+ 
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+ 
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: white;
+      padding: 24px;
+    }
+ 
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+ 
+    nav ul li {
+      margin-right: 20px;
+    }
+ 
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+ 
+    .product-card {
+      width: calc(33.33% - 20px);
+      margin-right: 20px;
+      margin-bottom: 50px;
+      float: left;
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+ 
+    .product-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 1px solid #ddd;
+    }
+ 
+    .product-card h2 {
+      margin-top: 20px;
+      margin-left: 20px;
+      font-size: 18px;
+    }
+ 
+    .navigation-buttons a {
+      display: inline-flex;
+      margin: 20px;
+      font-size: 24px;
+      color: #333;
+      text-decoration: none;
+    }
+ 
+    .navigation-buttons {
+      margin-left: 43%;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+ 
+    .pagination button:hover {
+      background-color: #555;
+    }
+   
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Productos</h1>
+        <nav>
+              <button type="button" aria-pressed="false" onclick="navigateToCategory('electronic')">
+                <a href="imprimir.html">
+                    <img src="./images/icon-electronic.png" width="40" alt="codigo lector">
+                 </a>
+              </button>
+              <button type="button" aria-pressed="false" onclick="navigateToCategory('fashion')">
+                <a href="imprimir.html">
+                    <img src="./images/icon-fashion.png" width="40" alt="carrito de compra">
+                 </a>
+              </button>
+              <button type="button" aria-pressed="false" onclick="navigateToCategory('home')">
+                <a href="imprimir.html">
+                    <img src="./images/icon-home.png" width="40" alt="ir a la casa pagian principal">
+                 </a>
+              </button>
+        </nav>
+    </header>
+    <main>
+ 
+<div>
+    <div>
+        <h2>Electrónica</h2>
+        <div class="product-card">
+            <img src="./images/producto1.jpg" alt="telefono movil">
+            <div class="product-info">
+                <h2>Teléfono inteligente</h2>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="./images/producto2.jpg" alt="camara go pro">
+            <div class="product-info">
+                <h2>Go Pro</h2>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="./images/producto3.jpg"alt="reloj smart">
+            <div class="product-info">
+                <h2>Smart watch</h2>
+            </div>
+        </div>
+    </div>
+    <div class="navigation-buttons">
+        <a href="#" onclick="irAtras()"><i class="material-icons">arrow_back</i></a>
+        <a href="#" onclick="irAdelante()"><i class="material-icons">arrow_forward</i></a>
+      </div>
+</div>
+ 
+<div>
+    <div>
+        <h2>Moda</h2>
+        <div class="product-card">
+            <img src="./images/productoM1.jpg" alt="camiseta enseña tete">
+            <div class="product-info">
+                <h2>Camiseta</h2>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="./images/productoM2.jpg" alt="abrigo invierno">
+            <div class="product-info">
+                <h2>Abrigo</h2>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="./images/productoM3.jpg"alt="ropa calcetines de perritos">
+            <div class="product-info">
+                <h2>Calcetinesh</h2>
+            </div>
+        </div>
+    </div>
+    <div class="navigation-buttons">
+        <a href="#" onclick="irAtras()"><i class="material-icons">arrow_back</i></a>
+        <a href="#" onclick="irAdelante()"><i class="material-icons">arrow_forward</i></a>
+      </div>
+</div>
+ 
+<div>
+    <div>
+        <h2>Hogar</h2>
+        <div class="product-card">
+            <img src="./images/producto1H.jpg" alt="mesa de madera">
+            <div class="product-info">
+                <h2>Mesa comedor</h2>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="./images/producto2H.jpg" alt="lampara de mimbre marron">
+            <div class="product-info">
+                <h2>Lámpara</h2>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="./images/producto3H.jpg" alt="silla de cuero">
+            <div class="product-info">
+                <h2>Silla comedor</h2>
+            </div>
+        </div>
+    </div>
+    <div class="navigation-buttons">
+        <a href="#" onclick="irAtras()"><i class="material-icons" aria-label="true">arrow_back</i></a>
+        <a href="#" onclick="irAdelante()"><i class="material-icons" aria-label="true">arrow_forward</i></a>
+      </div>
+</div>
+    </main>
+</body>
+</html>

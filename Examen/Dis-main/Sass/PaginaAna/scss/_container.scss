@@ -1,0 +1,14 @@
+.container{
+    width: 100%;
+    margin:auto;
+    
+    
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cabecera{
+    justify-content: space-between;
+}

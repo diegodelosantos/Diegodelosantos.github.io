@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+<title>Video - subtitles</title> 
+  </head>
+  <body>
+   <header>
+        <h1>Example of subtitles</h1>
+   </header>
+   <video width="480" height="320" controls="controls" id="myVideo">
+   <source src="movie_clip2.mp4" type="video/mp4" />
+   <source src="movie_clip2.ogg" type="video/ogg" />
+   <track kind=captions src=movie_clip2.en.vtt
+          srclang=en
+          lang=en 
+          label="English" default>
+   <track kind=captions src=movie_clip2.es.vtt
+          srclang=es
+          lang=es
+          label="Spanish">
+   </video>
+  </body>
+</html>

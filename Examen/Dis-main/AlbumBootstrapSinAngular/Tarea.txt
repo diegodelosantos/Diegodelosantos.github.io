@@ -1,0 +1,3 @@
+Album boostrap sin angular con fotos y videos, con controles de videos personalizados con botones de js
+Album igual pero con angular y material con sass
+Album nuestro como sea, recomendado con angular y sass, con componentes propios
